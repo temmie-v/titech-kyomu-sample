@@ -16,10 +16,17 @@ struct CourseList: View {
             .padding(.top)
         
         List {
-            ForEach (0 ..< courses.count) { index in
-                CourseInfo(course: courses[index])
+            if useMock {
+                ForEach (0 ..< mockCourses.count) { index in
+                    CourseInfo(course: mockCourses[index])
+                }
+                .listRowInsets(EdgeInsets())
+            } else {
+                ForEach (0 ..< courses.count) { index in
+                    CourseInfo(course: courses[index])
+                }
+                .listRowInsets(EdgeInsets())
             }
-            .listRowInsets(EdgeInsets())
         }
 //        .navigationBarTitle("申告チェック済み講義一覧", displayMode: .inline)
     }

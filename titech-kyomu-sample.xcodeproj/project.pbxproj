@@ -16,6 +16,7 @@
 		CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402E28C763C300E48AB5 /* TitechPortalKit */; };
 		CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = CED4403028C781C600E48AB5 /* MockCourseData.json */; };
 		CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */; };
+		CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403428C7986700E48AB5 /* LoadCourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		CED4402828C7621100E48AB5 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
 		CED4403028C781C600E48AB5 /* MockCourseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockCourseData.json; sourceTree = "<group>"; };
 		CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCourseForMock.swift; sourceTree = "<group>"; };
+		CED4403428C7986700E48AB5 /* LoadCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */,
+				CED4403428C7986700E48AB5 /* LoadCourse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */,
 				CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */,
 				CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */,
+				CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */,
 				CED4401828C7336000E48AB5 /* titech_kyomu_sampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,14 +8,21 @@
 import SwiftUI
 import TitechKyomuKit
 
+public let useMock = false
+
 @main
 struct titech_kyomu_sampleApp: App {
     var body: some Scene {
         WindowGroup {
             CourseList()
                 .onAppear {
-                    let courses = loadCourseForMock()
-                    print(courses)
+                    let coursesSelected: [KyomuCourse]
+                    if useMock {
+                        coursesSelected = loadCourseForMock()
+                    } else {
+                        coursesSelected = loadCourse()
+                    }
+                    print(coursesSelected)
                 }
         }
     }
