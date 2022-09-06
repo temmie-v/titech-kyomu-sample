@@ -17,7 +17,7 @@ struct CourseInfo: View {
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-            .frame(width: 40.0)
+            .frame(width: 50.0)
             VStack(alignment: .leading) {
                 ForEach (0 ..< course.periods.count, id: \.self) { index in
                     let period = course.periods[index]

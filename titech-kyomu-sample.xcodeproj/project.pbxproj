@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE5A184928C7A33A00D7EA6F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A184828C7A33A00D7EA6F /* UserInfo.swift */; };
-		CED4401828C7336000E48AB5 /* titech_kyomu_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */; };
+		CED4401828C7336000E48AB5 /* TitechKyomuSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */; };
 		CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401928C7336000E48AB5 /* CourseList.swift */; };
 		CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401B28C7336300E48AB5 /* Assets.xcassets */; };
 		CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		CE5A184828C7A33A00D7EA6F /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "titech-kyomu-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titech_kyomu_sampleApp.swift; sourceTree = "<group>"; };
+		CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechKyomuSample.swift; sourceTree = "<group>"; };
 		CED4401928C7336000E48AB5 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CED4401B28C7336300E48AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 				CED4402728C760D200E48AB5 /* MockCourse */,
 				CED4402628C760B600E48AB5 /* Model */,
 				CED4402528C7609500E48AB5 /* View */,
-				CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */,
+				CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */,
 				CED4401B28C7336300E48AB5 /* Assets.xcassets */,
 				CED4401D28C7336300E48AB5 /* Preview Content */,
 			);
@@ -194,7 +194,7 @@
 				CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */,
 				CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */,
 				CE5A184928C7A33A00D7EA6F /* UserInfo.swift in Sources */,
-				CED4401828C7336000E48AB5 /* titech_kyomu_sampleApp.swift in Sources */,
+				CED4401828C7336000E48AB5 /* TitechKyomuSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

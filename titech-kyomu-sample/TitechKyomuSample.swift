@@ -11,7 +11,7 @@ import TitechKyomuKit
 public let useMock = false
 
 @main
-struct titech_kyomu_sampleApp: App {
+struct TitechKyomuSample: App {
     @State private var courses: [KyomuCourse] = []
     var body: some Scene {
         WindowGroup {
