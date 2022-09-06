@@ -7,8 +7,11 @@
 
 import SwiftUI
 import TitechKyomuKit
+import TitechPortalKit
 
-struct CourseList: View {    
+struct CourseList: View {
+    //    @State private var courses: [KyomuCourse] = []
+    let courses: [KyomuCourse]
     var body: some View {
         Text("講義一覧")
             .font(.largeTitle)
@@ -16,20 +19,17 @@ struct CourseList: View {
             .padding(.top)
         
         List {
-            if useMock {
-                ForEach (0 ..< mockCourses.count) { index in
-                    CourseInfo(course: mockCourses[index])
-                }
-                .listRowInsets(EdgeInsets())
-            } else {
-                ForEach (0 ..< courses.count) { index in
-                    CourseInfo(course: courses[index])
-                }
-                .listRowInsets(EdgeInsets())
+            ForEach (0 ..< courses.count, id: \.self) { index in
+                CourseInfo(course: courses[index])
             }
+//            ForEach(courses, id: \.self) { course in
+//                CourseInfo(course: course)
+//            }
+            .listRowInsets(EdgeInsets())
         }
     }
 }
+
 
 //struct CourseList_Previews: PreviewProvider {
 //    static var previews: some View {

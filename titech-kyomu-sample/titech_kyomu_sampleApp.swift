@@ -12,20 +12,32 @@ public let useMock = false
 
 @main
 struct titech_kyomu_sampleApp: App {
+    @State private var courses: [KyomuCourse] = []
     var body: some Scene {
         WindowGroup {
-            CourseList()
-                .onAppear {
-                    var coursesSelected: [KyomuCourse] = []
-                    if useMock {
-                        coursesSelected = loadCourseForMock()
-                    } else {
-                        Task {
-                            coursesSelected = try await loadCourse()
+            if useMock {
+                CourseList(courses: loadCourseForMock())
+            } else {
+                CourseList(courses: courses)
+                    .task {
+                        do {
+                            courses = try await loadCourse()
+                        } catch {
+                            print(error)
                         }
                     }
-                    print(coursesSelected)
-                }
+            }
+            //                .onAppear {
+            //                    var coursesSelected: [KyomuCourse] = []
+            //                    if useMock {
+            //                        coursesSelected = loadCourseForMock()
+            //                    } else {
+            //                        Task {
+            //                            coursesSelected = try await loadCourse()
+            //                        }
+            //                    }
+            //                    print(coursesSelected)
+            //                }
         }
     }
 }

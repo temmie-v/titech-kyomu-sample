@@ -17,7 +17,7 @@ struct CourseInfo: View {
                 .foregroundColor(.secondary)
             Spacer()
             VStack {
-                ForEach (0 ..< course.periods.count) { index in
+                ForEach (0 ..< course.periods.count, id: \.self) { index in
                     let period = course.periods[index]
                     let kanjiList = ["unknown", "日", "月", "火", "水", "木", "金", "土"]
                     let strPeriod = kanjiList[period.day.rawValue] + "曜 " + String(period.start) + "-" + String(period.end) + "限"
