@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE5A184928C7A33A00D7EA6F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A184828C7A33A00D7EA6F /* UserInfo.swift */; };
+		CED4401828C7336000E48AB5 /* TitechKyomuSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */; };
+		CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401928C7336000E48AB5 /* CourseList.swift */; };
+		CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401B28C7336300E48AB5 /* Assets.xcassets */; };
+		CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */; };
+		CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4402828C7621100E48AB5 /* CourseInfo.swift */; };
+		CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402B28C7638300E48AB5 /* TitechKyomuKit */; settings = {ATTRIBUTES = (Required, ); }; };
+		CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402E28C763C300E48AB5 /* TitechPortalKit */; };
+		CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = CED4403028C781C600E48AB5 /* MockCourseData.json */; };
+		CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */; };
+		CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403428C7986700E48AB5 /* LoadCourse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE5A184828C7A33A00D7EA6F /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "titech-kyomu-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitechKyomuSample.swift; sourceTree = "<group>"; };
+		CED4401928C7336000E48AB5 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		CED4401B28C7336300E48AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CED4402828C7621100E48AB5 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		CED4403028C781C600E48AB5 /* MockCourseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockCourseData.json; sourceTree = "<group>"; };
+		CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCourseForMock.swift; sourceTree = "<group>"; };
+		CED4403428C7986700E48AB5 /* LoadCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCourse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED4401128C7336000E48AB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */,
+				CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED4400B28C7336000E48AB5 = {
+			isa = PBXGroup;
+			children = (
+				CED4401628C7336000E48AB5 /* titech-kyomu-sample */,
+				CED4401528C7336000E48AB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED4401528C7336000E48AB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED4401628C7336000E48AB5 /* titech-kyomu-sample */ = {
+			isa = PBXGroup;
+			children = (
+				CED4402728C760D200E48AB5 /* MockCourse */,
+				CED4402628C760B600E48AB5 /* Model */,
+				CED4402528C7609500E48AB5 /* View */,
+				CED4401728C7336000E48AB5 /* TitechKyomuSample.swift */,
+				CED4401B28C7336300E48AB5 /* Assets.xcassets */,
+				CED4401D28C7336300E48AB5 /* Preview Content */,
+			);
+			path = "titech-kyomu-sample";
+			sourceTree = "<group>";
+		};
+		CED4401D28C7336300E48AB5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CED4402528C7609500E48AB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED4401928C7336000E48AB5 /* CourseList.swift */,
+				CED4402828C7621100E48AB5 /* CourseInfo.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED4402628C760B600E48AB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A184828C7A33A00D7EA6F /* UserInfo.swift */,
+				CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */,
+				CED4403428C7986700E48AB5 /* LoadCourse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED4402728C760D200E48AB5 /* MockCourse */ = {
+			isa = PBXGroup;
+			children = (
+				CED4403028C781C600E48AB5 /* MockCourseData.json */,
+			);
+			path = MockCourse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED4401328C7336000E48AB5 /* titech-kyomu-sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED4402228C7336300E48AB5 /* Build configuration list for PBXNativeTarget "titech-kyomu-sample" */;
+			buildPhases = (
+				CED4401028C7336000E48AB5 /* Sources */,
+				CED4401128C7336000E48AB5 /* Frameworks */,
+				CED4401228C7336000E48AB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "titech-kyomu-sample";
+			packageProductDependencies = (
+				CED4402B28C7638300E48AB5 /* TitechKyomuKit */,
+				CED4402E28C763C300E48AB5 /* TitechPortalKit */,
+			);
+			productName = "titech-kyomu-sample";
+			productReference = CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED4400C28C7336000E48AB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CED4401328C7336000E48AB5 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CED4400F28C7336000E48AB5 /* Build configuration list for PBXProject "titech-kyomu-sample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED4400B28C7336000E48AB5;
+			packageReferences = (
+				CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */,
+				CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */,
+			);
+			productRefGroup = CED4401528C7336000E48AB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED4401328C7336000E48AB5 /* titech-kyomu-sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED4401228C7336000E48AB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */,
+				CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */,
+				CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED4401028C7336000E48AB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */,
+				CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */,
+				CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */,
+				CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */,
+				CE5A184928C7A33A00D7EA6F /* UserInfo.swift in Sources */,
+				CED4401828C7336000E48AB5 /* TitechKyomuSample.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CED4402028C7336300E48AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED4402128C7336300E48AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED4402328C7336300E48AB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"titech-kyomu-sample/Preview Content\"";
+				DEVELOPMENT_TEAM = P6UNR67SFT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.titech.titech-kyomu-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED4402428C7336300E48AB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"titech-kyomu-sample/Preview Content\"";
+				DEVELOPMENT_TEAM = P6UNR67SFT;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.titech.titech-kyomu-sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED4400F28C7336000E48AB5 /* Build configuration list for PBXProject "titech-kyomu-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4402028C7336300E48AB5 /* Debug */,
+				CED4402128C7336300E48AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED4402228C7336300E48AB5 /* Build configuration list for PBXNativeTarget "titech-kyomu-sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED4402328C7336300E48AB5 /* Debug */,
+				CED4402428C7336300E48AB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TitechAppProject/titech-kyomu-kit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TitechAppProject/titech-portal-kit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED4402B28C7638300E48AB5 /* TitechKyomuKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */;
+			productName = TitechKyomuKit;
+		};
+		CED4402E28C763C300E48AB5 /* TitechPortalKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */;
+			productName = TitechPortalKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CED4400C28C7336000E48AB5 /* Project object */;
+}

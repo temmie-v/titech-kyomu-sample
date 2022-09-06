@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "kanna",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tid-kijyun/Kanna.git",
+      "state" : {
+        "revision" : "f9e4922223dd0d3dfbf02ca70812cf5531fc0593",
+        "version" : "5.2.7"
+      }
+    },
+    {
+      "identity" : "titech-kyomu-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TitechAppProject/titech-kyomu-kit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "995be2a636a4857ca32e1ca205de5344712980ff"
+      }
+    },
+    {
+      "identity" : "titech-portal-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TitechAppProject/titech-portal-kit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b04c90b712635aebfcb23915db7a40770fbce4c6"
+      }
+    }
+  ],
+  "version" : 2
+}
