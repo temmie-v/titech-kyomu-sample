@@ -12,12 +12,14 @@ struct CourseInfo: View {
     let course: KyomuCourse
     var body: some View {
         HStack {
-            Text(course.quarters.map { String($0) }.joined(separator: ",") + "Q")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-            Spacer()
-            VStack {
-                ForEach (0 ..< course.periods.count) { index in
+            VStack(alignment: .center) {
+                Text(course.quarters.map { String($0) }.joined(separator: ",") + "Q")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+            .frame(width: 50.0)
+            VStack(alignment: .leading) {
+                ForEach (0 ..< course.periods.count, id: \.self) { index in
                     let period = course.periods[index]
                     let kanjiList = ["unknown", "日", "月", "火", "水", "木", "金", "土"]
                     let strPeriod = kanjiList[period.day.rawValue] + "曜 " + String(period.start) + "-" + String(period.end) + "限"
@@ -25,19 +27,13 @@ struct CourseInfo: View {
                 }
             }
             Spacer()
-            VStack {
+            VStack(alignment: .trailing) {
                 Text(course.name)
                     .fontWeight(.bold)
                 Text(course.code)
-                    .font(.subheadline)
+                    .font(.footnote)
             }
         }
         .padding()
     }
 }
-
-//struct CourseInfo_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CourseInfo(course: course)
-//    }
-//}

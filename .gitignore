@@ -46,7 +46,3 @@ Package.resolved
 
 ## macOS
 .DS_Store
-
-
-# don't add password
-titech-kyomu-sample/Model/UserInfo.swift

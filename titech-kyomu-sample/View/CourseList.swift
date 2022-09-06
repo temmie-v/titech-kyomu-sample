@@ -7,8 +7,11 @@
 
 import SwiftUI
 import TitechKyomuKit
+import TitechPortalKit
 
 struct CourseList: View {
+    //    @State private var courses: [KyomuCourse] = []
+    let courses: [KyomuCourse]
     var body: some View {
         Text("講義一覧")
             .font(.largeTitle)
@@ -16,17 +19,10 @@ struct CourseList: View {
             .padding(.top)
         
         List {
-            ForEach (0 ..< courses.count) { index in
+            ForEach (0 ..< courses.count, id: \.self) { index in
                 CourseInfo(course: courses[index])
             }
             .listRowInsets(EdgeInsets())
         }
-//        .navigationBarTitle("申告チェック済み講義一覧", displayMode: .inline)
     }
 }
-
-//struct CourseList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CourseList()
-//    }
-//}
