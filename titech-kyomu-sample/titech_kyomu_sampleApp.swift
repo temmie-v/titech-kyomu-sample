@@ -27,17 +27,6 @@ struct titech_kyomu_sampleApp: App {
                         }
                     }
             }
-            //                .onAppear {
-            //                    var coursesSelected: [KyomuCourse] = []
-            //                    if useMock {
-            //                        coursesSelected = loadCourseForMock()
-            //                    } else {
-            //                        Task {
-            //                            coursesSelected = try await loadCourse()
-            //                        }
-            //                    }
-            //                    print(coursesSelected)
-            //                }
         }
     }
 }

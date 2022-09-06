@@ -9,8 +9,6 @@ import Foundation
 import TitechKyomuKit
 import TitechPortalKit
 
-//let courses: [KyomuCourse] = []
-
 func loadCourse() async throws -> [KyomuCourse] {
     let portal = TitechPortal(urlSession: .shared)
     try await portal.login(

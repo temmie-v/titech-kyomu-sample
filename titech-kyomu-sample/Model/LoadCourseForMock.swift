@@ -8,8 +8,6 @@
 import Foundation
 import TitechKyomuKit
 
-let mockCourses = loadCourseForMock()
-
 func loadCourseForMock() -> [KyomuCourse] {
     let file = Bundle.main.url(forResource: "MockCourseData", withExtension: ".json")!
     do {

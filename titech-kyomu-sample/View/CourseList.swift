@@ -22,17 +22,7 @@ struct CourseList: View {
             ForEach (0 ..< courses.count, id: \.self) { index in
                 CourseInfo(course: courses[index])
             }
-//            ForEach(courses, id: \.self) { course in
-//                CourseInfo(course: course)
-//            }
             .listRowInsets(EdgeInsets())
         }
     }
 }
-
-
-//struct CourseList_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CourseList()
-//    }
-//}
