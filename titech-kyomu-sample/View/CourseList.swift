@@ -8,7 +8,7 @@
 import SwiftUI
 import TitechKyomuKit
 
-struct CourseList: View {
+struct CourseList: View {    
     var body: some View {
         Text("講義一覧")
             .font(.largeTitle)
@@ -28,7 +28,6 @@ struct CourseList: View {
                 .listRowInsets(EdgeInsets())
             }
         }
-//        .navigationBarTitle("申告チェック済み講義一覧", displayMode: .inline)
     }
 }
 

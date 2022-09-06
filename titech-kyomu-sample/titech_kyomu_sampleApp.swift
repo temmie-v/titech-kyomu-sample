@@ -16,11 +16,13 @@ struct titech_kyomu_sampleApp: App {
         WindowGroup {
             CourseList()
                 .onAppear {
-                    let coursesSelected: [KyomuCourse]
+                    var coursesSelected: [KyomuCourse] = []
                     if useMock {
                         coursesSelected = loadCourseForMock()
                     } else {
-                        coursesSelected = loadCourse()
+                        Task {
+                            coursesSelected = try await loadCourse()
+                        }
                     }
                     print(coursesSelected)
                 }
