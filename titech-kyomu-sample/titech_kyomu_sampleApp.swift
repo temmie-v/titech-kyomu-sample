@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import TitechKyomuKit
 
 @main
 struct titech_kyomu_sampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CourseList()
+                .onAppear {
+                    let courses = loadCourseForMock()
+                    print(courses)
+                }
         }
     }
 }

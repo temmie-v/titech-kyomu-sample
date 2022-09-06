@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		CED4401828C7336000E48AB5 /* titech_kyomu_sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */; };
-		CED4401A28C7336000E48AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401928C7336000E48AB5 /* ContentView.swift */; };
+		CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4401928C7336000E48AB5 /* CourseList.swift */; };
 		CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401B28C7336300E48AB5 /* Assets.xcassets */; };
 		CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */; };
+		CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4402828C7621100E48AB5 /* CourseInfo.swift */; };
+		CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402B28C7638300E48AB5 /* TitechKyomuKit */; settings = {ATTRIBUTES = (Required, ); }; };
+		CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402E28C763C300E48AB5 /* TitechPortalKit */; };
+		CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = CED4403028C781C600E48AB5 /* MockCourseData.json */; };
+		CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "titech-kyomu-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titech_kyomu_sampleApp.swift; sourceTree = "<group>"; };
-		CED4401928C7336000E48AB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CED4401928C7336000E48AB5 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		CED4401B28C7336300E48AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CED4402828C7621100E48AB5 /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		CED4403028C781C600E48AB5 /* MockCourseData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockCourseData.json; sourceTree = "<group>"; };
+		CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadCourseForMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */,
+				CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +61,10 @@
 		CED4401628C7336000E48AB5 /* titech-kyomu-sample */ = {
 			isa = PBXGroup;
 			children = (
+				CED4402728C760D200E48AB5 /* MockCourse */,
+				CED4402628C760B600E48AB5 /* Model */,
+				CED4402528C7609500E48AB5 /* View */,
 				CED4401728C7336000E48AB5 /* titech_kyomu_sampleApp.swift */,
-				CED4401928C7336000E48AB5 /* ContentView.swift */,
 				CED4401B28C7336300E48AB5 /* Assets.xcassets */,
 				CED4401D28C7336300E48AB5 /* Preview Content */,
 			);
@@ -65,6 +77,31 @@
 				CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CED4402528C7609500E48AB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED4401928C7336000E48AB5 /* CourseList.swift */,
+				CED4402828C7621100E48AB5 /* CourseInfo.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED4402628C760B600E48AB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED4402728C760D200E48AB5 /* MockCourse */ = {
+			isa = PBXGroup;
+			children = (
+				CED4403028C781C600E48AB5 /* MockCourseData.json */,
+			);
+			path = MockCourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +120,10 @@
 			dependencies = (
 			);
 			name = "titech-kyomu-sample";
+			packageProductDependencies = (
+				CED4402B28C7638300E48AB5 /* TitechKyomuKit */,
+				CED4402E28C763C300E48AB5 /* TitechPortalKit */,
+			);
 			productName = "titech-kyomu-sample";
 			productReference = CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,10 @@
 				Base,
 			);
 			mainGroup = CED4400B28C7336000E48AB5;
+			packageReferences = (
+				CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */,
+				CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */,
+			);
 			productRefGroup = CED4401528C7336000E48AB5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */,
 				CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */,
 				CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED4401A28C7336000E48AB5 /* ContentView.swift in Sources */,
+				CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */,
+				CED4401A28C7336000E48AB5 /* CourseList.swift in Sources */,
+				CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */,
 				CED4401828C7336000E48AB5 /* titech_kyomu_sampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +387,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TitechAppProject/titech-kyomu-kit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TitechAppProject/titech-portal-kit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CED4402B28C7638300E48AB5 /* TitechKyomuKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */;
+			productName = TitechKyomuKit;
+		};
+		CED4402E28C763C300E48AB5 /* TitechPortalKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */;
+			productName = TitechPortalKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CED4400C28C7336000E48AB5 /* Project object */;
 }
