@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TitechAppProject/titech-kyomu-kit",
       "state" : {
-        "branch" : "main",
-        "revision" : "995be2a636a4857ca32e1ca205de5344712980ff"
+        "revision" : "a206006a5d21fcc0b18e34c35afe237901043c51",
+        "version" : "1.0.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/TitechAppProject/titech-portal-kit",
       "state" : {
-        "branch" : "main",
-        "revision" : "b04c90b712635aebfcb23915db7a40770fbce4c6"
+        "revision" : "b04c90b712635aebfcb23915db7a40770fbce4c6",
+        "version" : "1.6.0"
       }
     }
   ],

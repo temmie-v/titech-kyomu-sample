@@ -13,11 +13,11 @@
 		CED4401C28C7336300E48AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401B28C7336300E48AB5 /* Assets.xcassets */; };
 		CED4401F28C7336300E48AB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED4401E28C7336300E48AB5 /* Preview Assets.xcassets */; };
 		CED4402928C7621100E48AB5 /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4402828C7621100E48AB5 /* CourseInfo.swift */; };
-		CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402B28C7638300E48AB5 /* TitechKyomuKit */; settings = {ATTRIBUTES = (Required, ); }; };
-		CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */ = {isa = PBXBuildFile; productRef = CED4402E28C763C300E48AB5 /* TitechPortalKit */; };
 		CED4403128C781C600E48AB5 /* MockCourseData.json in Resources */ = {isa = PBXBuildFile; fileRef = CED4403028C781C600E48AB5 /* MockCourseData.json */; };
 		CED4403328C7822D00E48AB5 /* LoadCourseForMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403228C7822D00E48AB5 /* LoadCourseForMock.swift */; };
 		CED4403528C7986700E48AB5 /* LoadCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED4403428C7986700E48AB5 /* LoadCourse.swift */; };
+		CEE0B9DE28C84D760075DDCB /* TitechPortalKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEE0B9DD28C84D760075DDCB /* TitechPortalKit */; };
+		CEE0B9E128C84EC90075DDCB /* TitechKyomuKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEE0B9E028C84EC90075DDCB /* TitechKyomuKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED4402F28C763C300E48AB5 /* TitechPortalKit in Frameworks */,
-				CED4402C28C7638300E48AB5 /* TitechKyomuKit in Frameworks */,
+				CEE0B9E128C84EC90075DDCB /* TitechKyomuKit in Frameworks */,
+				CEE0B9DE28C84D760075DDCB /* TitechPortalKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,8 +127,8 @@
 			);
 			name = "titech-kyomu-sample";
 			packageProductDependencies = (
-				CED4402B28C7638300E48AB5 /* TitechKyomuKit */,
-				CED4402E28C763C300E48AB5 /* TitechPortalKit */,
+				CEE0B9DD28C84D760075DDCB /* TitechPortalKit */,
+				CEE0B9E028C84EC90075DDCB /* TitechKyomuKit */,
 			);
 			productName = "titech-kyomu-sample";
 			productReference = CED4401428C7336000E48AB5 /* titech-kyomu-sample.app */;
@@ -159,8 +159,8 @@
 			);
 			mainGroup = CED4400B28C7336000E48AB5;
 			packageReferences = (
-				CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */,
-				CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */,
+				CEE0B9DC28C84D760075DDCB /* XCRemoteSwiftPackageReference "titech-portal-kit" */,
+				CEE0B9DF28C84EC90075DDCB /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */,
 			);
 			productRefGroup = CED4401528C7336000E48AB5 /* Products */;
 			projectDirPath = "";
@@ -397,34 +397,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/TitechAppProject/titech-kyomu-kit";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */ = {
+		CEE0B9DC28C84D760075DDCB /* XCRemoteSwiftPackageReference "titech-portal-kit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TitechAppProject/titech-portal-kit";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 1.6.0;
+			};
+		};
+		CEE0B9DF28C84EC90075DDCB /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TitechAppProject/titech-kyomu-kit";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CED4402B28C7638300E48AB5 /* TitechKyomuKit */ = {
+		CEE0B9DD28C84D760075DDCB /* TitechPortalKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CED4402A28C7638300E48AB5 /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */;
-			productName = TitechKyomuKit;
-		};
-		CED4402E28C763C300E48AB5 /* TitechPortalKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CED4402D28C763C300E48AB5 /* XCRemoteSwiftPackageReference "titech-portal-kit" */;
+			package = CEE0B9DC28C84D760075DDCB /* XCRemoteSwiftPackageReference "titech-portal-kit" */;
 			productName = TitechPortalKit;
+		};
+		CEE0B9E028C84EC90075DDCB /* TitechKyomuKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEE0B9DF28C84EC90075DDCB /* XCRemoteSwiftPackageReference "titech-kyomu-kit" */;
+			productName = TitechKyomuKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
